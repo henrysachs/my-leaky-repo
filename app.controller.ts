@@ -8,6 +8,8 @@ export class AppController {
   @Get()
   getHello(): string {
     const AWS_KEY = 'AKIAIOSFODNN7EXAMPLE';
+    const DB_PW= process.env.DB_PW;
+    const PW= process.env.PASSWORD;
     return this.appService.getHello();
   }
 }
